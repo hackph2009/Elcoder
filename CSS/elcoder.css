@@ -1286,6 +1286,7 @@ ul {
 }
 .events .details {
   flex: 1;
+  position: relative;
 }
 .events .details .countdown {
   display: flex;
@@ -1293,13 +1294,6 @@ ul {
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
-}
-@media (max-width: 767px) {
-  .events .details .countdown {
-    text-align: center;
-    gap: 5px;
-    max-width: 100%;
-  }
 }
 .events .details .countdown .box {
   width: fit-contents;
@@ -1333,10 +1327,17 @@ ul {
   padding: 8px 10px;
 }
 @media (max-width: 767px) {
+  .events .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .events .details .countdown {
     flex-direction: column;
     align-items: center;
-    max-width: 40vh;
+    width: 80%;
+    position: relative;
   }
   .events .details .countdown .box {
     width: 80%;
@@ -1344,10 +1345,9 @@ ul {
   }
   .events .countdown .box .num {
     border-bottom: none;
-    width: 30vh;
   }
-  .events .countdown .box .label {
-    width: 30vh;
+  .events .info {
+    max-width: 80%;
   }
 }
 .events .info h3 {
@@ -1458,6 +1458,12 @@ ul {
   bottom: -60px;
   right: -60px;
   z-index: 1;
+}
+@media (max-width: 767px) {
+  .pricing .container::before,
+  .pricing .container::after {
+    display: none;
+  }
 }
 .pricing .box {
   overflow: hidden;
@@ -1781,7 +1787,7 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-width: 50vh;
+  min-width: 50%;
   flex-wrap: wrap;
   position: relative;
   z-index: -2;
@@ -1821,10 +1827,16 @@ ul {
 .discount .section-two {
   display: flex;
   flex-grow: 1;
-  min-width: 50vh;
+  min-width: 50%;
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .discount .section-one,
+  .discount .section-two {
+    max-width: 100%;
+  }
 }
 .discount .section-two form {
   display: flex;
