@@ -1336,14 +1336,10 @@ ul {
   .events .details .countdown {
     flex-direction: column;
     align-items: center;
-    max-width:40vh;
+    max-width: 40vh;
   }
   .events .details .countdown .box {
-<<<<<<< HEAD
     width: 80%;
-=======
-    width: 40vh;
->>>>>>> 8b4ba54eded28baffa724049d15c4ce315362b33
     padding: 5px;
   }
   .events .countdown .box .num {
@@ -1351,8 +1347,8 @@ ul {
     width: 30vh;
   }
   .events .countdown .box .label {
-    width:30vh;
-  } 
+    width: 30vh;
+  }
 }
 .events .info h3 {
   font-weight: bold;
