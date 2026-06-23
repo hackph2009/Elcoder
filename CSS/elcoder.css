@@ -1336,10 +1336,10 @@ ul {
   .events .details .countdown {
     flex-direction: column;
     align-items: center;
-    max-width:50vh;
+    max-width:40vh;
   }
   .events .details .countdown .box {
-    width: 50vh;
+    width: 40vh;
     padding: 5px;
   }
   .events .countdown .box .num {
