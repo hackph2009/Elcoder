@@ -1336,6 +1336,7 @@ ul {
   .events .details .countdown {
     flex-direction: column;
     align-items: center;
+    max-width:50vh;
   }
   .events .details .countdown .box {
     width: 50vh;
