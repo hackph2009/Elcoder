@@ -1338,7 +1338,7 @@ ul {
     align-items: center;
   }
   .events .details .countdown .box {
-    width: 50vh;
+    width: 80%;
     padding: 5px;
   }
   .events .countdown .box .num {
